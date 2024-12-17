@@ -46,3 +46,28 @@ const response3 = orders.map(item => {
 });
 console.log('response3', response3);
 console.log('original', orders);
+
+// Ejercicio:
+function addNewAttr(array) {
+    return array.map(item => ({
+        ...item,
+        tax: Math.trunc(item.price * 0.19)
+    }))
+}
+
+entrada = [
+    {
+        name: "Product 1",
+        price: 1000,
+        stock: 10
+    },
+    {
+        name: "Product 2",
+        price: 2000,
+        stock: 20
+    }
+];
+
+console.log('entrada original', entrada);
+
+console.log('ejercicio', addNewAttr(entrada));
