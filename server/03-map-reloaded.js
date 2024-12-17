@@ -55,7 +55,7 @@ function addNewAttr(array) {
     }))
 }
 
-entrada = [
+input = [
     {
         name: "Product 1",
         price: 1000,
@@ -68,6 +68,6 @@ entrada = [
     }
 ];
 
-console.log('entrada original', entrada);
+console.log('entrada original', input);
 
-console.log('ejercicio', addNewAttr(entrada));
+console.log('ejercicio', addNewAttr(input));
